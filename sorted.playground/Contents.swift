@@ -6,3 +6,8 @@ func stringSimilarity(stringOne: String, stringTwo: String) -> Bool {
     
     return stringOneSorted == stringTwoSorted
 }
+
+// More efficent
+func stringSimilarity2(stringOne: String, stringTwo: String) -> Bool {
+    return stringOne.sorted() == stringTwo.sorted()
+}
